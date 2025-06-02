@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+        h1 {
+            transition: font-size 0.3s ease;
+        }
+</style>
+<body>
+
+<button onclick="document.getElementById('Demo').innerHTML=Date()">The time is?</button>
+<p id="Demo"></p>
+
+<h1 onmouseover="big()" id="demo">onmouse over</h1>
+
+<h1 onmouseout="small()" id="mn">onmouse out</h1>
+
+<p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+
+<p id="DEMO"></p>
+
+<script>
+function big() {
+  document.getElementById("demo").innerHTML="hii"
+}
+
+function small() {
+ document.getElementById("mn").innerHTML="prince"
+}
+
+function myFunction() {
+  document.getElementById("DEMO").innerHTML = "java script";
+}
+</script>
+
+</body>
+</html>
