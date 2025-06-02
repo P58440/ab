@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="kt"></p>
+
+<h2>The toUpperCase() Method</h2>
+
+<p>The string in uppercase is:</p>
+<p id="demo"></p>
+
+<h2>The toLowerCase() Method</h2>
+
+<p>The string in lowercase is:</p>
+<p id="hi"></p>
+
+<h2>The includes() Method</h2>
+
+<p>The string includes is:</p> 
+<p id="kb"></p>
+
+<h2>The startsWith() Method</h2>
+
+<p>The string startsWith() is:</p> 
+<p id="mp"></p>
+
+<h2>The endsWith() Method</h2>
+
+<p>The string endsWith() is:</p> 
+<p id="mt"></p>
+
+<h2>The indexOf() Method</h2>
+
+<p>The string indexOf() is:</p> 
+<p id="mk"></p>
+
+<h2>The slice(start, end) Method</h2>
+
+<p>The string slice(start, end) is:</p> 
+<p id="ml"></p>
+
+<h2>The substring(start, end) Method</h2>
+
+<p>The string substring(start, end) is:</p> 
+<p id="mo"></p>
+
+<h2>The trim() Method</h2>
+
+<p>The string trim() is:</p> 
+<p id="md"></p>
+
+<h2>The replace(old, new) Method</h2>
+
+<p>The string replace(old, new) is:</p> 
+<p id="ma"></p>
+
+<h2>The split(separator) Method</h2>
+
+<p>The string split(separator) is:</p> 
+<p id="mr"></p>
+
+<script>
+    let txt = "prince";
+document.getElementById("kt").innerHTML = txt.length;
+    let text = "prince";
+document.getElementById("demo").innerHTML = text.toUpperCase();
+
+let the = "prince";
+document.getElementById("hi").innerHTML = the.toLowerCase();
+
+let th = "prince";
+document.getElementById("kb").innerHTML = th.includes("Kru");
+
+let h = "prince";
+document.getElementById("mp").innerHTML = h.startsWith("K");
+
+let o = "prince";
+document.getElementById("mt").innerHTML = o.endsWith("i");
+
+let l = "prince";
+document.getElementById("mk").innerHTML = l.indexOf("t");
+
+let p = "prince";
+document.getElementById("ml").innerHTML = p.slice(1,8);
+
+let k = "prince";
+document.getElementById("mo").innerHTML = k.substring(1,8);
+
+let m = "prince";
+document.getElementById("md").innerHTML = m.trim("t");
+
+let n = "patel prince";
+document.getElementById("ma").innerHTML = n.replace("prince","Patel");
+
+let c = "prince";
+document.getElementById("mr").innerHTML = c.split(",");
+</script>
+
+
+
+</body>
+</html>
