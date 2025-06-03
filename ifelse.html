@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>if condition</h2>
+<p id="demo"></p>
+<h2>else condition</h2>
+<p id="demo1"></p>
+<h2>else if condition</h2>
+<p id="demo2"></p>
+<h2>ternary</h2>
+<p id="demo3"></p>
+<script>
+    //if condition
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+//else condition
+var hour = 19
+if (hour < 18) {
+  document.getElementById("demo1").innerHTML = "good day"
+} else {
+  document.getElementById("demo1").innerHTML = "bed day"
+}
+//else if condition
+const time = 16
+
+if (time < 10) {
+  document.getElementById("demo2").innerHTML ="good day";
+} else if (time < 20) {
+  document.getElementById("demo2").innerHTML = "good evening";
+} else {
+  document.getElementById("demo2").innerHTML = "good night";
+}
+//ternary
+var age=19
+let voteable = (age < 18) ? "Too young":"Old enough";
+document.getElementById("demo3").innerHTML = voteable;
+</script>
+
+</body>
+</html>
