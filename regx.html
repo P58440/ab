@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>With a String</h2>
+<p id="demo"></p>
+<h2>Find any digits</h2>
+<p id="demo1"></p>
+<h2>White Space Find</h2>
+<p id ="demo2"></p>
+<script>
+let text = "Visit W3Schools!"; 
+let n = text.search("W3Schools");
+document.getElementById("demo").innerHTML = n;
+
+let text1 = "Is this all there is?";
+let result = text.match(/[h-s]/g);
+document.getElementById("demo1").innerHTML = result;
+
+let text2= "Is this all there is?";
+let result1 = text2.match('/s/g');
+document.getElementById("demo2").innerHTML = result1.length;
+</script>
+
+</body>
+</html>
