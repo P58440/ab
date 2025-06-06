@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filter Numbers</title>
+</head>
+<body>
+
+  <h2>Filter Numbers Greater Than 5</h2>
+  <p id="result">Filtered result will appear here.</p>
+  <button onclick="filterNumbers()">Filter Numbers</button>
+
+  <script>
+    function filterNumbers() {
+      const numbers = [1, 3, 6, 8, 2, 10, 4, 7];
+      const filtered = numbers.filter(num => num > 5);
+      document.getElementById("result").textContent = "Filtered numbers: " + filtered.join(", ");
+    }
+  </script>
+  </body>
+</html>

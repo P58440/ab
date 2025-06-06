@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Square Numbers using .map()</title>
+</head>
+<body>
+  <h1>Square Numbers in Array</h1>
+  <p>Original Array: [1, 2, 3, 4, 5]</p>
+  <button onclick="squareArray()">Square Numbers</button>
+  <p id="result"></p>
+
+  <script>
+    function squareArray() {
+      const numbers = [1, 2, 3, 4, 5];
+      const squared = numbers.map(num => num * num);
+      document.getElementById("result").textContent = "Squared Array: " + squared.join(", ");
+    }
+  </script>
+</body>
+</html>

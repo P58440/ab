@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>parseInt with try…catch</title>
+</head>
+<body>
+  <h1>String to Number Parser</h1>
+  <input type="text" id="stringInput" placeholder="Enter a string">
+  <button onclick="parseString()">Parse</button>
+  <p id="output"></p>
+
+  <script>
+    function parseString() {
+      const str = document.getElementById("stringInput").value;
+      const outputEl = document.getElementById("output");
+
+      try {
+        
+        const parsed = parseInt(str, 10);
+
+      
+        if (isNaN(parsed)) {
+          throw new Error(`"${str}" is not a valid integer.`);
+        }
+
+     
+        outputEl.textContent = `Parsed number: ${parsed}`;
+      } catch (err) {
+        
+        outputEl.textContent = `Error: ${err.message}`;
+      }
+    }
+  </script>
+</body>
+</html>
